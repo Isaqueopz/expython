@@ -1,14 +1,37 @@
-p = float(input('Qual o preço do pagamento efetuado?'))
-c = str(input('Qual é a condição de pagamento?'))
-if c == 'a vista dinheiro' or 'a vista cheque': 
-    v1 = p * 0.9
-    print ('o seu valor era de {} e agora é de {}, pois teve um desconto de 10%'.format(p,v1))
-elif c == 'a vista cartão':
-    v2 =  p * 0.95
-    print ('o seu valor era de {} e agora é de {}, pois teve um desconto de 5%'.format(p,v2))
-elif c == 'uma vez no cartão' or 'duas vezes no cartão':
-    print ('o seu valor era de {} e agora é de {}, pois não teve descontos'.format(p,p))
-else: 
-    c == 'duas vezes ou mais no cartão'
-    v3 = p * 1,2
-    print ('o seu valor era de {} e agora é de {}, pois não teve descontos'.format(p,v3))
+print (10*'=','LOJAS PINHEIRO',10*'=')
+p = int(input('Preço das compras: R$')) 
+print('''FORMAS DE PAGAMENTO
+[ 1 ] à vista dinheiro/cheque
+[ 2 ] à vista cartão
+[ 3 ] 2x no cartão
+[ 4 ] 3x ou mais no cartão''')
+o = int(input('Qual é a opção?'))
+1 == p * 0.9
+2 == p * 0.95
+3 == p 
+4 == (p * 1.2) + p
+
+if o == 1:
+  nv = p * 0.9
+  print('Sua compra de R${} vai custar R${} no final.'.format(p,nv))
+
+elif o == 2:
+  nv = p * 0.95
+  print('Sua compra de R${} vai custar R${} no final.'.format(p,nv))
+
+elif o == 3:
+  nv = p 
+  parcela = p / 2
+  print('Sua compra será parcelada em 2x de R${} SEM JUROS.'.format(parcela))
+
+elif o == 4:
+  total = p + (p * 0.2)
+  m = int(input('Quantas parcelas ?'))
+  parcela = total / m
+  print ('Sua compra será parcelada em {}x de R${:.2f} COM JUROS'.format(m,parcela))
+  nv = total 
+  print('Sua compra de R${} vai custar R${} no final.'.format(p,nv)) 
+
+else:
+  print('''Opção inválida de pagamento
+Escolha um valor entre os digitos acima!''')
