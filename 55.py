@@ -3,7 +3,7 @@ menor = 0
 
 for c in range (0,5):
     p = float(input('Digite seu peso (KG):'))
-    if p == 1
+    if c == 0:
         maior = p
         menor = p
     else:
