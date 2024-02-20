@@ -11,7 +11,7 @@ count = 0
 acertou = False
 
 while not acertou:
-    palpite = palpite = int(input('Em qual número eu pensei?'))
+    palpite = int(input('Em qual número eu pensei?'))
     count += 1
     if palpite == computador:
         acertou = True
