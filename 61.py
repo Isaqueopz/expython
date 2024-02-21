@@ -1,9 +1,12 @@
-numero = int(input('Primeiro termo:'))
-razao = int(input('Razão:'))
-termo = 0
-if  termo != 10:
-    termo =+ 1
-valornovo = 0
-while termo != 10:
-    valornovo = numero*razao
-print(valornovo)
+print('Gerador de PA')
+print('-='*10)
+primeiro = int(input('Primeiro termo: '))
+razão = int(input('Razão: '))
+termo = primeiro 
+cont = 1
+while cont <= 10:
+    print(f' {termo} >', end='')
+    termo += razão
+    cont += 1
+print(' FIM!')
+
