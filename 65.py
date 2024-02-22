@@ -1,15 +1,17 @@
-
-numero = 0
-
-numero = int(input('Qual número deseja escolher:'))
-
-pergunta = input('deseja continuar? S/N ')
-count = 0
-count2 = 0
-while pergunta != 'não':
-    numero1 = int(input('Qual número escolherá agora? '))
-    pergunta = input('deseja continuar? S/N ')
-    count += (1) + 1
-    média = ((numero + numero1) / count)
-
-print(f'A sua média foi {média}, o seu maior número foi {max(numero,numero1)} e o seu menor número foi {min(numero,numero1)}')
+soma = quant = média = maior = menor = 0 
+resp = 'S'
+while resp in 'Ss':
+    num = int(input('Digite um número:'))
+    soma += num
+    quant += 1 
+    if quant == 1:
+        maior = menor = num 
+    else:
+        if num > maior:
+            maior = num
+        if num < menor:
+            menor = num
+    resp = str(input('Quer continuar? [S/N]' )).upper().strip()[0]
+média = soma/quant
+print(f'Você digitou {quant} números e a média foi {média}')
+print(f'O maior valor foi {maior} e o menor foi {menor}')
