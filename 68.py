@@ -16,10 +16,10 @@ print('='*55)
 
 while True:
     escolha = str(input('Qual a sua escolha?[par/impar]')).strip().upper()
-    if escolha == computador
+    if escolha == computador:
         print('Parabéns')
 
 
 
 
-  print(f'A escolha do computador foi {computador}')
+  #print(f'A escolha do computador foi {computador}')

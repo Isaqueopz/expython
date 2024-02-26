@@ -1,6 +1,6 @@
 idade = 0 
 sexo = ''
-continuar = 'sim'
+continuar = 'Sim','sim'
 
 
 while True:
@@ -9,5 +9,4 @@ while True:
     continuar = str(input('Você quer continuar? [SIM/NÃO] ')).strip().upper()[0]
     if continuar == 'não':
         break
-    
-  
+         
