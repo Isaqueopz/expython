@@ -7,9 +7,13 @@ while True:
     total += preço
     if preço > 1000:
         totmil += 1
-    if cont == 1 or preço < menor:
+    if cont == 1:
         menor = preço
         barato = produto
+    else:
+        if preço < menor:
+            menor = preço
+            barato = produto
     resp = ' '
     while resp not in 'SN':
         resp = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
