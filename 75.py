@@ -1,17 +1,11 @@
-val1 = int(input('Digite um valor: '))
-val2 = int(input('Digite um valor: '))
-val3 = int(input('Digite um valor: '))
-val4 = int(input('Digite um valor: '))
-
-lista = (val1,val2,val3,val4)
-cont9 = lista.count(9)
-inde3 = lista.index(3)
-
-
-
-
-print (f'Você digitou os valores {lista}')
-print(f'O número 9 apareceu {cont9} vezes')
-print(f'O número três apareceu na {inde3} posição')
-
-
+núm =  (int(input('Digite um número: ')),
+        int(input('Digite outro número: ')),
+        int(input('Digite mais um número: ')),
+        int(input('Digite o último número: ')))
+print(f'Você digitou os valores {núm}')
+print(f'O valor 9 apareceu {núm.count(9)} (vez)es')
+print(f'O valor 3 apareceu na {núm.index(3)+1} posição')
+print('Os valores pares digitados foram ', end='')
+for n in núm:
+    if n % 2 == 0:
+        print( n )
