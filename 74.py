@@ -9,3 +9,6 @@ lista = (num0,num1,num2,num3,num4)
 print(f'Os valores escolhidos foram {lista}')
 print(f'o maior valor foi {max(lista)}')
 print(f'o menor valor foi {min(lista)}')
+
+#for n in numeros:
+    #print(f'{n}' , end='')
