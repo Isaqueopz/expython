@@ -25,3 +25,6 @@ for c, v in enumerate(valores):
 print('Cheguei ao final da lista.')
 
 
+# b = a[:] aqui não cria uma ligação, cria um cópia da list A
+
+
