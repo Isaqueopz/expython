@@ -9,7 +9,6 @@ while True:
         listapar.append(novonumero)
     else:
         listaimpar.append(novonumero)
-    pergunta = str(input('Você quer continuar [S/N]: ')).upper().strip()[0]
     if pergunta != 'S':
      break
 print(f' A lista completa é {lista}')
