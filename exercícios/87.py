@@ -1,44 +1,32 @@
-totsoma = 0
-
-
-
-
-a = [int(input('Digite um valor para [0,0] '))]
-b = [int(input('Digite um valor para [0,1] '))]
-c = [int(input('Digite um valor para [0,2] '))]
-d = [int(input('Digite um valor para [1,0] '))]
-e = [int(input('Digite um valor para [1,1] '))]
-f = [int(input('Digite um valor para [1,2] '))]
-g = [int(input('Digite um valor para [2,0] '))]
-h = [int(input('Digite um valor para [2,1] '))]
-i = [int(input('Digite um valor para [2,2] '))]
-
-
-
-lista =  [a,b,c,d,e,f,g,h,i]
-
-elementos = [a,b,c,d,e,f,g,h,i]
-
-
-soma = c + f + i
-totsoma += soma
-
+somatot = 0
+lista = [int(input('Digite um valor para [0,0] ')), int(input('Digite um valor para [0,1] ')), int(input('Digite um valor para [0,2] ')), 
+    int(input('Digite um valor para [1,0] ')), int(input('Digite um valor para [1,1] ')), int(input('Digite um valor para [1,2] ')), 
+    int(input('Digite um valor para [2,0] ')), int(input('Digite um valor para [2,1] ')), int(input('Digite um valor para [2,2] '))]
 print('-='*40)
-print( lista[ 0 ],end=' ' )
-print( lista[ 1 ],end=' ' )
-print( lista[ 2 ] )
-print( lista[ 3 ],end=' ')
-print( lista[ 4 ],end=' ' )
-print( lista[ 5 ])
-print( lista[ 6 ],end=' ' )
-print( lista[ 7 ],end=' ' )
-print( lista[ 8 ])
+print( f'[{lista[ 0 ]:^5}]',end=' ')
+print( f'[{lista[ 1 ]:^5}]',end=' ')
+print( f'[{lista[ 2 ]:^5}]' )
+print( f'[{lista[ 3 ]:^5}]',end=' ')
+print( f'[{lista[ 4 ]:^5}]',end=' ')
+print( f'[{lista[ 5 ]:^5}]')
+print( f'[{lista[ 6 ]:^5}]',end=' ')
+print( f'[{lista[ 7 ]:^5}]',end=' ')
+print( f'[{lista[ 8 ]:^5}]',end=' ')
+print()
 
-if lista[3] > lista[4] and lista[3] > lista[5]:
+for v in lista:
+    if v % 2 == 0:
+        somatot += v
+
+somater = lista[2]+lista[5]+lista[8] 
+
+
+print(f'A soma dos valores pares é de {somatot}')
+print(f'A soma dos valores da terceira coluna é de {somater}')
+if lista[3] > lista[4] and lista[3] >  lista[5]:
     print(f'O Maior valor da segunda linha é {lista[3]}')
-elif lista[4] > lista[3] and lista[4] > lista[5]:
+elif lista[4] > lista[3] and lista [4] > lista[5]:
     print(f'O Maior valor da segunda linha é {lista[4]}')
-elif lista[5] > lista[3] and lista[5] > lista[4]:
+elif lista[5] > lista[3] and  lista[5] > lista[4]:
     print(f'O Maior valor da segunda linha é {lista[5]}')
 
-print(f'a soma dos valores da terceira coluna são {soma}')
