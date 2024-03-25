@@ -1,6 +1,6 @@
 from random import randint
 from time import sleep
-from operator import itemgetter
+from operator import itemgetter # --> especifica um indice especifico para organizar 
 print('           SORTEANDO VALORES           ')
 jogo = {'Jogador 1':randint(0,6),
         'Jogador 2':randint(0,6),
