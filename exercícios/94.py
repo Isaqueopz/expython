@@ -17,7 +17,6 @@ while True:
                 listmulheres.append(pessoa['nome'])
             break
         print('ERRO!, Por favor, digite apenas M ou F.')
-        
     pessoa['idade'] = int(input('Idade:  '))
     galera.append(pessoa.copy())
     while True:
@@ -26,26 +25,17 @@ while True:
             break
         print('ERRO! Responda apenas S ou N.')
     idade += pessoa['idade']
-
     media = (idade) / cont
-
-
-
     if resp == 'N':
         break
-
-
-
 print('=-'*40)
 print(galera)
 print(f'O total de pessoas adicionadas foi de {cont} pessoas')
 print(f'A média de idade foi de {media:.2f}')
-
 if contmulher > 0:
     print(print(f'A lista de mulheres é {listmulheres}'))
 else:
     print('Infelizmente, não teve mulheres nesse cadastro...')
-
 for p in galera:
     if p['idade'] >= media:
         print('     ')
