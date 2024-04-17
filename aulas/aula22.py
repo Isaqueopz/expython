@@ -12,3 +12,5 @@ print(f'O dobro de {num} é {numeros.dobro(num)}')
 
 #PACOTES
 # --> ajuda a separar os módulos em pacotes ajudando ainda mais na organização 
+
+#para inicilizar um pacote abre um novo arquivo e coloca o __init__.py
